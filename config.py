@@ -1,1 +1,1 @@
-FOLDER_PATH = "put your folderpath here"
+FOLDER_PATH = "C:\\projekt\\MachineLearning\\create_folders\\"
