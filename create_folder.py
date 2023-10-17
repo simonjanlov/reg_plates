@@ -1,22 +1,25 @@
 import os
 import shutil
+import string
 
 
-def create_folder(folder_names):
-    """Takes a list of folder names as argument and creates folders in your current working directory!
-    Deletes and recreates folders if they exists"""
-    path = f'./{folder_names}'
-    for path in folder_names:
+def create_folders(path):
+    
+    folder_names = list(string.ascii_uppercase)
+    remove = ['I','V','Q']
+    for char in remove:
+        folder_names.remove(char)
+        
+    for name in folder_names:
         try:
-            os.makedirs(path)
-            print("Folder %s created" % path)
+            os.makedirs(path + name)
         except FileExistsError:
-            shutil.rmtree(path)
-            os.makedirs(path)
-            print("Deleted and remade folders %s! " % path)
+            shutil.rmtree(path + name)
+            os.makedirs(path + name)
 
+if __name__=='__main__':
 
+    # path = "C:\projekt\MachineLearning\create_folders\\"
+    
+    create_folders('.\\test_folders\\')
 
-if __name__ == "__main__":
-    list = ['test1','test2', 'test4']
-    create_folder(list)
