@@ -33,12 +33,18 @@ def generate_reg_nr():
         
         if part1_reg_nr not in error_list:
             flag = False
+        else:
+            part1_reg_nr = ""
+            part2_reg_nr = ""
+
 
 
     reg_nr = part1_reg_nr+" "+part2_reg_nr
     return reg_nr
 
 if __name__ == "__main__":
-    reg_nr = generate_reg_nr()
-    print(len(reg_nr))
+    for i in range(500):
+        reg_nr = generate_reg_nr()
+        if len(reg_nr) == 7:
+            print(reg_nr)
 

@@ -20,4 +20,4 @@ def create_multiple_images(amount):
 
 
 if __name__=='__main__':
-    create_multiple_images(100)
+    create_multiple_images(1000)

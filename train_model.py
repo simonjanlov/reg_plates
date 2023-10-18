@@ -23,9 +23,9 @@ for folder in folders:
 
 
 # model = LogisticRegression()
-model = LogisticRegression(solver='lbfgs', max_iter=1000)
+model = LogisticRegression(solver='lbfgs', max_iter=1010)
 
 model.fit(df_data, df_label.values.ravel())
 
-save_to_file(model, 'logistic_reg_model_trained100')
+save_to_file(model, 'logistic_reg_model_trained1000')
 
