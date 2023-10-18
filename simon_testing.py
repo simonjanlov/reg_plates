@@ -25,8 +25,8 @@ for folder in folders:
 # df_label = pd.concat([df_label, pd.DataFrame(['B'])], axis=0)
 
 
-# print(df_data)
-# print(df_label)
+print(df_data)
+print(df_label)
 
-model = LogisticRegression()
-model.fit(df_data, df_label.values.ravel())
+# model = LogisticRegression()
+# model.fit(df_data, df_label.values.ravel())
