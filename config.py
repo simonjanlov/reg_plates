@@ -1,1 +1,1 @@
-FOLDER_PATH = "put your folderpath here"
+FOLDER_PATH = "C:\\Users\henry\\Documents\\projekt\\machine learning\\tool_box\\images"
