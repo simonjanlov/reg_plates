@@ -14,6 +14,7 @@ def create_image(reg_nr, save_path):
         # plt.tight_layout()
         plt.savefig(save_path)
         # plt.show()
+        plt.close()
 
     else:
         print("Invalid plate number")    

@@ -12,7 +12,6 @@ def save_to_file(object,file_path):
 def load_file(file_path):
     """takes a file path as argument and load said file in to a variable using joblib.load"""
     file = jb.load(file_path)
-    print(file)
     return file
     
 

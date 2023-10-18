@@ -16,7 +16,7 @@ def generate_reg_nr():
                 'PUB','RAP','RAS','ROM','RPS','RUS','SEG','SEX','SJU',
                 'SOS','SPY','SUG','SUP','SUR','TBC','TOA','TOK','TRE',
                 'TYP','UFO','USA','WAM','WAR','WWW','XTC','XTZ','XXL',
-                'XXX','ZEX','ZOG','ZPY','ZUG','ZUP'	'ZOO']
+                'XXX','ZEX','ZOG','ZPY','ZUG','ZUP','ZOO']
     part2_reg_nr = ""
     part1_reg_nr = ""
     flag = True
