@@ -40,5 +40,5 @@ def generate_reg_nr():
 
 if __name__ == "__main__":
     reg_nr = generate_reg_nr()
-    print(reg_nr)
+    print(len(reg_nr))
 
